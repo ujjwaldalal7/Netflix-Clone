@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Martel Sans";
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("images/Background.jpg");
+    height: 90vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1500px,100vw);
+}
+nav{
+    margin: auto;
+    width: 70vw;
+    height: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+nav img{
+    width: 160px;
+}
+.main .box{
+    width:100%;
+    height: 90vh;
+    opacity: 0.5;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    color: white;
+    align-content: center;
+    justify-content: center;
+}
+.text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 10;
+    position: relative;
+    text-align: center;
+}
+.p1{
+    font-size: 55px;
+    font-weight: 1000;
+}
+.p2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.p3{
+    font-size: 25px;
+}
+.p4{
+    display: flex;
+    padding-top: 20px;
+}
+input{
+    height:50px;
+    width: 360px;
+    background-color: inherit;
+    border: 1px solid white;
+    border-radius: 8px;
+    z-index: 10;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+.email button{
+    width: 200px;
+    height:52px;
+    background-color: red;
+    border-radius: 8px;
+    color:white;
+    font-size: 22px;
+    font-weight: bold;
+}
+button{
+    position: relative;
+    z-index: 10;
+    cursor:pointer;
+}
+.buttons :nth-child(1){
+    background-color: inherit;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    width: 120px;
+}
+.buttons :nth-child(2){
+    background-color: red;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    width: 100px;
+}
+.ruler{
+    height:10px;
+    background-color: rgb(36, 35, 35);
+}
+.first{
+    color: white;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.first .text{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0px;
+}
+.first .text :nth-child(1){
+    font-size: 44px;
+    font-weight:bolder;
+    text-align: left;
+}
+.first .text :nth-child(2){
+    font-size: 24px;
+    text-align: left;
+}
+.image{
+    position: relative;
+}
+.image img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+.image video{
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+.third .image video{
+    position: absolute;
+    top: 51px;
+    right: 100px;
+    width: 355px;
+}
+.freq{
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bolder;
+}
+.ques {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    max-width: 60vw;
+    background-color: rgb(36, 35, 35);
+    margin: 34px auto;
+    cursor: pointer;
+}
+.faq .ques p{
+    display: grid;
+    width: inherit;
+    gap:10px;
+    background-color: rgb(36, 35, 35);
+    grid-template-columns: 1fr;
+    color: white;
+    padding-left: 10px;
+}
+.ques svg {
+    filter: invert(1);
+}
+.again{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.email{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+@media screen and (max-width:1100px){
+    .first{
+        flex-wrap: wrap;
+    }
+    .email{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
